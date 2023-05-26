@@ -119,7 +119,8 @@ class _NextHomePage extends State<NextHomePage> {
                       width: button_size,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("eye.png"), fit: BoxFit.cover),
+                            image: AssetImage("assets/eye.png"),
+                            fit: BoxFit.cover),
                       ),
                     ),
                   ),
