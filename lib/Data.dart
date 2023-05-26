@@ -1835,6 +1835,7 @@ class Data {
       "(;SZ[19]HA[0]AB[ba][ab][eb][fb][bc][ec][bd][cd][dd][df][bg][cg];AW[fa][bb][cb][gb][ib][cc][dc][fc][hc][ed][fd][gd];B[da])|(;SZ[19]HA[0]AB[ba][ab][eb][fb][bc][ec][bd][cd][dd][df][bg][cg];AW[fa][bb][cb][gb][ib][cc][dc][fc][hc][ed][fd][gd];B[da];W[ga];B[ea])|(;SZ[19]HA[0]AB[ba][ab][eb][fb][bc][ec][bd][cd][dd][df][bg][cg];AW[fa][bb][cb][gb][ib][cc][dc][fc][hc][ed][fd][gd];B[ca];W[ea];B[db])";
 
   static void makeQuestionPrimer() {
+    question.clear();
     question.add(primer_q15);
 
     question.add(primer_q1);
@@ -2011,6 +2012,7 @@ class Data {
   }
 
   static void makeQuestionBegginer() {
+    question.clear();
     question.add(beginner_q1);
     question.add(beginner_q2);
     question.add(beginner_q3);
@@ -2362,6 +2364,7 @@ class Data {
   }
 
   static void makeQuestionIntermediate() {
+    question.clear();
     question.add(intermediate_q1);
     question.add(intermediate_q2);
     question.add(intermediate_q3);
@@ -2648,6 +2651,7 @@ class Data {
   }
 
   static void makeQuestionEndgame() {
+    question.clear();
     question.add(endgame_q1);
     question.add(endgame_q2);
     question.add(endgame_q3);

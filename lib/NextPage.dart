@@ -68,7 +68,7 @@ class _NextHomePage extends State<NextHomePage> {
   Goban gbn = Goban("_NextHomePage");
   late RenderBox appBarWidget;
   double appBarHeight = 56.0;
-  bool eye_view = false;
+  bool eye_view = true;
   bool undo_view = false;
   bool first_view = false;
   bool prev_view = false;
@@ -119,8 +119,7 @@ class _NextHomePage extends State<NextHomePage> {
                       width: button_size,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/eye.png"),
-                            fit: BoxFit.cover),
+                            image: AssetImage("eye.png"), fit: BoxFit.cover),
                       ),
                     ),
                   ),
