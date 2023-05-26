@@ -18,13 +18,15 @@ int kifuInx = 0;
 // ignore: must_be_immutable
 class NextPage extends StatelessWidget {
   String name;
-  int button_height = 80;
+  double button_height = 80;
   String title = "";
 
   NextPage(this.name, this.title) {}
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    button_height = (size.width / 8).toDouble();
     if (name == '1') {
       Data.makeQuestionPrimer();
       Data.setGradeName("primer");
