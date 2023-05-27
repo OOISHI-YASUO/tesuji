@@ -112,18 +112,17 @@ class _NextHomePage extends State<NextHomePage> {
               onTapDown: (details) => onTouchEvent2(details),
               child: Row(
                 children: <Widget>[
-                  //Visibility(
-                  //  visible: eye_view,
-                  //child:
-                  Container(
-                    height: button_size,
-                    width: button_size,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("eye.png"), fit: BoxFit.cover),
+                  Visibility(
+                    visible: eye_view,
+                    child: Container(
+                      height: button_size,
+                      width: button_size,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("eye.png"), fit: BoxFit.cover),
+                      ),
                     ),
                   ),
-                  //),
                   Visibility(
                     visible: undo_view,
                     child: Container(
