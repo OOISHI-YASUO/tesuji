@@ -68,8 +68,8 @@ class _NextHomePage extends State<NextHomePage> {
   Goban gbn = Goban("_NextHomePage");
   late RenderBox appBarWidget;
   double appBarHeight = 56.0;
-  bool eye_view = true;
-  bool undo_view = true;
+  bool eye_view = false;
+  bool undo_view = false;
   bool first_view = false;
   bool prev_view = false;
   bool next_view = false;
@@ -105,11 +105,9 @@ class _NextHomePage extends State<NextHomePage> {
           //crossAxisAlignment: CrossAxisAlignment.center,
           direction: Axis.horizontal,
           children: <Widget>[
-/*
             GestureDetector(
                 onTapDown: (details) => onTouchEvent(details),
                 child: GobanBody(gbn, appBarHeight)),
-*/
             GestureDetector(
               onTapDown: (details) => onTouchEvent2(details),
               child: Row(
